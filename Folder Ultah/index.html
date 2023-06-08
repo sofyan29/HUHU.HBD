@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <img src="Simple Atmospheric Balloon Happy Birthday Poster Background Material.jpg" alt="" srcset="">
+    <title>HBD NAYAA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            color: #ff6f00;
+        }
+
+        p {
+            color: #333333;
+            font-size: 18px;
+        }
+
+        .cake img {
+            width: 300px;
+            height: auto;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff6f00;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .cake img {
+                width: 200px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+                color: #ffffff;
+            }
+
+            button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>><</h1>
+
+            <div class="cake">
+                <img class="select" src="Screenshot_20230608-154301_1.jpg" alt="Kue Ulang Tahun">
+            </div>
+
+            <p>Selamat ulang tahun yang ke<span id="age"></span>!</p>
+            <p>Klik dibawah ini yaa :)</p>
+
+            <button onclick="sayBirthdayWishes()">Ucapkan Selamat</button>
+
+            <script>
+                // Menghitung usia
+                var birthYear = 2006; // Tahun lahir
+                var currentYear = new Date().getFullYear();
+                var age = currentYear - birthYear;
+                document.getElementById("age").textContent = age;
+
+                // Fungsi untuk mengucapkan selamat ulang tahun
+                function sayBirthdayWishes() {
+                    alert("Selamat ulang tahun NAYAA! Semoga menjadi hari penuh kebahagiaan dan harapan. Sukses selalu kamu !");
+                }
+            </script>
+</body>
+
+</html>
